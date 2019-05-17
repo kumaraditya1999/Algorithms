@@ -36,15 +36,15 @@ And then we have to merge all these sorted subarrays, step by step to form one s
 ## General methodology in a Merge sort
  
  
- a.We take a variable p and store the starting index of our array in this. 
+ 1.We take a variable p and store the starting index of our array in this. 
  
- b.And we take another variable r and store the last index of array in it.
+ 2.And we take another variable r and store the last index of array in it.
  
- c.Then we find the middle of the array using the formula (p + r)/2 and mark the middle index as q, and break the array into two subarrays, from p to q and from q + 1 to r index.
+ 3.Then we find the middle of the array using the formula (p + r)/2 and mark the middle index as q, and break the array into two subarrays, from p to q and from q + 1 to r index.
  
- d.Then we divide these 2 subarrays again, just like we divided our main array and this continues.
+ 4.Then we divide these 2 subarrays again, just like we divided our main array and this continues.
  
- e.Once we have divided the main array into subarrays with single elements, then we start merging the subarrays.
+ 5.Once we have divided the main array into subarrays with single elements, then we start merging the subarrays.
 
 
 
