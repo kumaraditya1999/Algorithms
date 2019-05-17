@@ -1,8 +1,10 @@
-#NUMBER PATTERN
-###Pseudo Code:
+NUMBER PATTERN
+
+Pseudo Code:
+
 	for  i=0 to 2*n-1
 		for j=0 to j<2*n-1
-    //for the first quadrant
+	//for the first quadrant
 			if  i<n  &&  j<n  
 				if  j>=i
 					print  n-i
@@ -24,10 +26,10 @@
 					print  i+2-n
 				else
 					print n
-		//for the fourth quadrant
+    //for the fourth quadrant
 			else
 				if  i-n>=j-n
 					print  i-n+2
 				else if  i-n<j-n
 					print  j-n+2
-	   /n
+	        /n
