@@ -2,8 +2,7 @@
 
 Merge Sort follows the rule of Divide and Conquer to sort a given set of numbers/elements, recursively, hence consuming less time.
 
-
-Divide and Conquer
+ Divide and Conquer
 If we can break a single big problem into smaller sub-problems,we can solve the smaller sub-problems and combine their solutions to find the solution for the original big problem;it becomes easier to solve the whole problem.The idea here is,if we can somehow divide a problem into smaller sub-problems, it becomes easier to eventually solve the whole problem.In Merge Sort, the given unsorted array with n elements, is divided into n subarrays, each having one element, because a single element is always sorted in itself. Then, it repeatedly merges these subarrays,to produce new sorted subarrays and in the end,one complete sorted array is produced.The concept of Divide and Conquer involves three steps:
 
 i.Divide the problem into multiple small problems.
@@ -48,7 +47,7 @@ void mergeSort(int a[], int p, int r)
     int q;
     if(p < r)
     {
-        q = (p + r) / 2;
+        q = (p + r) / 2;7
         mergeSort(a, p, q);
         mergeSort(a, q+1, r);
         merge(a, p, q, r);
