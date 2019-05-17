@@ -1,7 +1,7 @@
 # Merge Sort Algorithm
 
 
-Merge Sort follows the rule of Divide and Conquer to sort a given set of numbers/elements, recursively, hence consuming less time.
+Merge Sort follows the rule of **_Divide and Conquer_** to sort a given set of numbers/elements, recursively, hence consuming less time.
 
 Before jumping on to, how merge sort works and it's implementation, first lets understand what is the rule of Divide and Conquer?
 
@@ -14,9 +14,9 @@ In Merge Sort, the given unsorted array with n elements, is divided into n subar
 
 The concept of Divide and Conquer involves three steps:
 
-    Divide the problem into multiple small problems.
-    Conquer the subproblems by solving them. The idea is to break down the problem into atomic subproblems, where they are actually solved.
-    Combine the solutions of the subproblems to find the solution of the actual problem.
+   - Divide the problem into multiple small problems.
+   - Conquer the subproblems by solving them. The idea is to break down the problem into atomic subproblems, where they are actually solved.
+   - Combine the solutions of the subproblems to find the solution of the actual problem.
 
   
   
@@ -33,7 +33,7 @@ And then we have to merge all these sorted subarrays, step by step to form one s
 
 
 
-## General methodology in a merge sort
+## General methodology in a Merge sort
  
  
  a.We take a variable p and store the starting index of our array in this. 
@@ -192,9 +192,9 @@ int main()
 
 ### Output
 
-Given array:32 45 67 2 7
+Given array: 32 45 67 2 7
 
-Sorted array:2 7 32 45 67
+Sorted array: 2 7 32 45 67
 
 
 
@@ -208,11 +208,11 @@ Also, we perform a single step operation to find out the middle of any subarray,
 And to merge the subarrays, made by dividing the original array of n elements, a running time of O(n) will be required.
 Hence the total time for mergeSort function will become n(log n + 1), which gives us a time complexity of O(n*log n).
 
-Worst Case Time Complexity [ Big-O ]: O(n*log n)
+- Worst Case Time Complexity [ Big-O ]: O(n*log n)
 
-Best Case Time Complexity [Big-omega]: O(n*log n)
+- Best Case Time Complexity [Big-omega]: O(n*log n)
 
-Average Time Complexity [Big-theta]: O(n*log n)
+- Average Time Complexity [Big-theta]: O(n*log n)
 
 Space Complexity: O(n)
 
