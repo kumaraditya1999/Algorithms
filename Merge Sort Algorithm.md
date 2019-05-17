@@ -217,5 +217,17 @@ Average Time Complexity [Big-theta]: O(n*log n)
 Space Complexity: O(n)
 
   In all the 3 cases (worst, average and best),time complexity remains same as merge sort always divides the array in two halves and takes linear time to merge two halves.
-   
-It requires equal amount of additional space as the unsorted array. Hence its not at all recommended for searching large unsorted arrays.It is the best Sorting technique used for sorting Linked Lists.
+  
+
+
+## Drawback
+  
+  
+It requires equal amount of additional space as the unsorted array. Hence its not at all recommended for searching large unsorted arrays.
+
+
+
+## Best application
+
+
+It is the best Sorting technique used for sorting Linked Lists.
