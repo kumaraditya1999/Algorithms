@@ -14,3 +14,5 @@ for binarySearch(a,left, right, value)
         return binarySearch(a, value, mid+1, right)
       )else
     return not found
+
+    time complexity:O(logn)
