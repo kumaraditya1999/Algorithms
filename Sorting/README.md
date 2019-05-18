@@ -51,9 +51,6 @@
 <br>
 
 
-  Merge Sort(arr[], l,  r)
-  
-If (r>l)
 
      1. Find the middle point to divide the array into two halves:  
              middle m = (l+r)/2
