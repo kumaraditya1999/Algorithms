@@ -2,7 +2,7 @@
 
 ## **BinarySearch**
 **Pseudo Code :**
-..
+```
 for binarySearch(a,left, right, value)
     while right >= left
     (mid = (right-left)/2)+left
@@ -14,5 +14,5 @@ for binarySearch(a,left, right, value)
         return binarySearch(a, value, mid+1, right)
       )else
     return not found
-
-    time complexity:O(logn)
+```
+  **Time codeplexity :** O(logn)
