@@ -1,23 +1,24 @@
 #include <vector>
 using namespace std;
 
+template<typename T>
 class FenwickTree
 {
     private:
         int size;
-        vector<long long int> BIT;
+        vector<T> BIT;
 
     public:
         FenwickTree(int sz=1e5)
         {
             this->size = sz;
-            this->BIT.resize(sz+1,0);
+            this->BIT.resize(2*sz+1,0);
         }
 
         // return sum from 1 to index (inclusive and zero indexed)
-        long long int get(int index)
+        T get(int index)
         {
-            long long int sum = 0;
+            T sum = 0;
             index = index + 1; 
             while (index>0) 
             {
@@ -28,7 +29,7 @@ class FenwickTree
         }
 
         // updates the tree (zero indexed query)
-        void upd(int index, long long int val) 
+        void upd(int index, T val) 
         {  
             index = index + 1; 
             while (index <= this->size) 
@@ -38,9 +39,8 @@ class FenwickTree
             } 
         } 
 
-
         // returns sum from l to r (zero indexed query)
-        long long int ask(int l, int r)
+        T ask(int l, int r)
         {
             return get(r)-get(l-1);
         }
@@ -52,5 +52,5 @@ class FenwickTree
 };
 
 int main(){
-    FenwickTree ft(100);
+    FenwickTree<int> ft(100);
 }
